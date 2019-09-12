@@ -1,0 +1,22 @@
+{
+  "name": "[PACKAGE_NAME]",
+  "version": "1.0.0",
+  "description": "[THEME_DESCRIPTION]",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "[REPOSITORY_URL]"
+  },
+  "author_name": "[AUTHOR_NAME]",
+  "author_email": "[AUTHOR_EMAIL]",
+  "author_url": "[AUTHOR_URL]",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-autoprefixer": "~3.0.4",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "load-grunt-tasks": "~5.1.0",
+    "npm-check-updates": "^3.1.22",
+  }
+}

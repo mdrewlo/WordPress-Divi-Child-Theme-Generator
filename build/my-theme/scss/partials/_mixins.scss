@@ -1,0 +1,68 @@
+@mixin breakpoint($class) {
+
+  @if $class == widescreen {
+    @media all and (min-width: 1405px) { @content; }
+  }
+
+  @else if $class == xlargeplus {
+    @media all and (min-width: 1200px) and (max-width: 1405px) { @content; }
+  }
+
+  @else if $class == xlarge {
+    @media all and (min-width: 1100px) and (max-width: 1405px) { @content; }
+  }
+
+  @else if $class == large {
+    @media all and (min-width: 981px) and (max-width: 1099px) { @content; }
+  }
+
+  @else if $class == xmedium {
+    @media all and (min-width: 801px) and (max-width: 980px) { @content; }
+  }
+
+  @else if $class == medium_down {
+    @media all and (max-width: 980px) { @content; }
+  }
+
+  @else if $class == medium {
+    @media all and (min-width: 789px) and (max-width: 800px) { @content; }
+  }
+
+  @else if $class == smedium {
+    @media all and (min-width: 768px) and (max-width: 788px) { @content; }
+  }
+
+  @else if $class == small {
+    @media all and (max-width: 767px) { @content; }
+  }
+
+  @else if $class == xsmall {
+    @media all and (max-width: 479px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xsmall, small, medium, large, xlarge, widescreen";
+  }
+}
+
+@mixin navigation-breakpoint($class) {
+  @if $class == xl {
+    @media all and (min-width: 1300px) and (max-width: 1442px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media all and (min-width: 1140px) and (max-width: 1299px) { @content; }
+  }
+
+  @else if $class == md {
+    @media all and (min-width: 1041px) and (max-width: 1139px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media all and (max-width: 1040px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: md, lg, xl";
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+.sass-cache
+node_modules/*
+release/*
+!release/my-theme.zip
+build/*
+!build/my-theme/
+screenshots/*
+!screenshots/screenshot.psd
+!screenshots/screenshot.png
