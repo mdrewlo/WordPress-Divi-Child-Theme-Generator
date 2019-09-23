@@ -129,7 +129,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'src',
-            src: ['**/*'],
+            src: ['**/*', '.*'],
             dest: 'build/<%= folder_name %>/',
           }
         ]
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'build/<%= folder_name %>/',
-            src: ['images/**', 'js/**', 'functions.php', 'style.css', 'style.css.map', 'screenshot.png'],
+            src: ['images/**', 'js/**', 'functions.php', 'style.css', 'style.css.map', 'screenshot.png', '.gitignore'],
             dest: 'build/<%= folder_name %>/temp/'
           }
         ]
