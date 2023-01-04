@@ -5,18 +5,21 @@
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:example/my-divi-child-theme.git"
+    "url": "ssh://git@github.com:github_username/my-divi-child-theme.git"
   },
   "author_name": "Author Name",
   "author_email": "email@example.com",
   "author_url": "https://example.com",
   "license": "UNLICENSED",
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.3",
     "grunt-autoprefixer": "~3.0.4",
-    "grunt-contrib-sass": "~1.0.0",
     "grunt-contrib-watch": "~1.1.0",
     "load-grunt-tasks": "~5.1.0",
-    "npm-check-updates": "^3.1.22",
+    "npm-check-updates": "^16.6.2"
+  },
+  "dependencies": {
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^8.0.0"
   }
 }

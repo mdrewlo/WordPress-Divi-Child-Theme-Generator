@@ -3,6 +3,8 @@ module.exports = function(grunt) {
   // load all tasks
   require('load-grunt-tasks')(grunt);
 
+  const sass = require('node-sass');
+
   // configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -206,6 +208,10 @@ module.exports = function(grunt) {
     },
 
     sass: {
+      options: {
+        implementation: sass,
+        sourceMap: true
+      },
       build: {
         files: {
           'build/<%= folder_name %>/style.css': 'build/<%= folder_name %>/scss/style.scss'
